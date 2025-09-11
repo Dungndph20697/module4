@@ -15,15 +15,15 @@
 </head>
 <body>
 <div class="container">
-    <form action="/bt-chuyenDoiTienTe/tinh-toan" method="post">
+    <form action="/bt-tuDien/dich-van-ban" method="post">
         <div class="mb-3">
-            <label class="form-label">USD</label>
-            <input type="text" name="usd" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label class="form-label">Nhập</label>
+            <input type="text" name="request" class="form-control" >
         </div>
         <div>
-            <c:if test="${not empty vnd}">
+            <c:if test="${not empty result}">
                 <div class="alert alert-danger" role="alert">
-                        ${vnd} đ
+                        ${result}
                 </div>
             </c:if>
         </div>
