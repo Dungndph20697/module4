@@ -20,8 +20,8 @@ public class EmployeeController {
 
     @PostMapping("/create")
     public String submit(@ModelAttribute("employee") Employee employee, Model model) {
-        model.addAttribute("employee", employee);
-        model.addAttribute("ContactNumber", employee.getContactNumber());
+        model.addAttribute("name", employee.getName());
+        model.addAttribute("contactNumber", employee.getContactNumber());
         model.addAttribute("id", employee.getId());
         return "/th/formvadatabinding/info";
     }
